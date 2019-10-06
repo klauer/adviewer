@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 IMAGE_VIEWER = os.environ.get(
     'ADVIEWER_IMAGE_VIEWER',
-    'caproto-image-viewer --image {image} --cam {cam} {base}'
+    'caproto-image-viewer --backend pyepics --image {image} --cam {cam} {base}'
 )
 
 
